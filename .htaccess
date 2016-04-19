@@ -1,0 +1,27 @@
+DirectoryIndex index.php
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://www.radeberger-wichtel.de/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^radeberger-wichtel.de$ [NC]
+RewriteRule ^(.*) https://www.radeberger-wichtel.de/$1 [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^www.radeberger-wichtel.de$ [NC]
+RewriteRule ^(.*),(.*)\.php$ index.php?entry_id=$2 [QSA,L]
+
+RewriteRule ^home$ /home,1.php
+RewriteRule ^shop$ /shop,3.php
+RewriteRule ^weihnachten$ /weihnachten,11.php
+RewriteRule ^berufe$ /berufe,6.php
+RewriteRule ^maedels$ /maedels,8.php
+RewriteRule ^kids$ /kids,9.php
+RewriteRule ^unikate$ /unikate,10.php
+RewriteRule ^extras$ /extras,24.php
+RewriteRule ^edition2013$ /edition-2013,7.php
+RewriteRule ^ueber-uns$ /ueber-uns,13.php
+RewriteRule ^aktuell$ /aktuell,4.php
+RewriteRule ^kontakt$ kontakt,5.php
+
+

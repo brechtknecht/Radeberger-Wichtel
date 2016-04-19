@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<title><::entry_title::></title>
+<meta charset="utf-8">
+
+<meta name="description" content="<::entry_meta_description::>">
+<meta name="keywords" content="<::entry_meta_keywords::>">
+
+<script type="text/javascript" src="shared/javascript/jquery-1.10.2-min.js"></script>
+<script type="text/javascript" src="shared/javascript/jquery-ui-1.10.3.custom.min.js"></script>
+<script type="text/javascript" src="shared/javascript/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="shared/javascript/mobile.js"></script>
+<script type="text/javascript" src="shared/javascript/jquery.fadeslideshow.js"></script>
+<::modulejs::>
+<!--[if lte IE 8]> 
+<script type="text/javascript" src="shared/javascript/html5shiv.js"></script>
+<![endif]-->
+
+<link type="text/css" href="shared/css/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+<link type="text/css" href="shared/css/colorbox.css" rel="stylesheet">
+<link type="text/css" href="shared/css/styles.css" rel="stylesheet">
+<link type="text/css" href="shared/css/fonts.css" rel="stylesheet">
+<::modulestyles::>
+</head>
+
+<body class="nojs w900">
+	<main>
+   		<header>
+        	<nav id="mainNavigation">
+            	<::navi_main::>
+            </nav>
+            <h1><a href="./">Radeberger Wichtel</a></h1>
+            <h2><::sub_headline::></h2>
+           	<::switch_language::>
+            <div id="slider"><::slideImages::></div>
+        </header> 
+        <div id="cart"><::ihr::> <a href="warenkorb,12.php?cart" title="Warenkorb anzeigen"><::warenkorb::></a> <::enthält::>  <span><::cart_count::></span> <::artikel::></div>
+        
+        <content>
+        	<h3><::entry_name::></h3>
+            <div id="contentarea1"><::content1::></div>
+        </content>
+        
+        <footer>
+        	<div>
+            	<article>
+                	<h4><::adresse::></h4>
+                    <p>Malermeister Pinkert<br>
+                    Friedensstraße 20<br>
+                    01455 Radeberg/OT Liegau Augustusbad
+                    </p>
+                </article>
+                <article>
+                	<h4><::informationen::></h4>
+                    <p><::weihnachtsmärkte::><br>
+                    <::neues produkt::> Schwibbogen<br>
+                    <::neues produkt::> Pyramide
+                    </p>
+                </article>
+                <article>
+                	<h4><::kontakt::></h4>
+                    <p><a href="https://www.facebook.com/pages/Radeberger-Wichtel-Fanseite/274660675898821" target="_blank">Facebook</a><br>
+                   +49 3528 440898<br>
+                   <a href="mailto:info@radeberger-wichtel.de">info@radeberger-wichtel.de</a> | <a href="http://www.radeberger-wichtel.de/kontakt#formular">Mailformular</a>
+                    </p>
+                </article>
+            </div>	
+        </footer>
+        <p>Radeberger Wichtel <::year::></p>
+       
+    </main>
+    
+	<script type="text/javascript" src="shared/javascript/functions.js"></script>
+</body>
+</html>

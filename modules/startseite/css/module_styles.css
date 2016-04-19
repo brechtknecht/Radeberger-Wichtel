@@ -1,0 +1,210 @@
+#modContent {
+    max-width: 900px;
+    margin: auto;
+}
+
+#modArticles article {
+    display: block;
+}
+
+#modArticles article div.articleTeaser {
+    background-color: #FFFFFF;
+    position: relative;
+    width: 900px;
+    overflow: auto;
+}
+
+#modArticles article div.articleTeaser * {
+    color: #666666;
+}
+
+#modArticles article div.articleTeaser figure {
+    width: 400px;
+    float: left;
+    position: relative;
+}
+
+#modArticles article div.articleTeaser figure img {
+    width: 100%;
+    display: block;
+}
+
+#modArticles article div.articleTeaser figure>div {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    background-image: none;
+    border-left: 20px solid transparent;
+    border-right: 20px solid #FFFFFF;
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+}
+
+#modArticles article div.articleTeaser>div {
+    position: absolute;
+    top: 0px;
+    left: 400px;
+    bottom: 0px;
+    width: 500px;
+    box-sizing: border-box;
+    padding: 30px 30px 0px 30px;
+    text-align: center;
+}
+
+#modArticles div.modArticleText {
+    padding: 0px 10px 0px 10px;
+}
+
+#modArticles article.row2 div.articleTeaser {
+    background-color: #B0A48B;
+}
+
+#modArticles article.row2 div.articleTeaser figure {
+    float: right;
+}
+
+#modArticles article.row2 div.articleTeaser>div {
+    left: 0px;
+}
+
+#modArticles article.row2 div.articleTeaser>div * {
+    color: #FFFFFF;
+}
+
+#modArticles article.row2 div.articleTeaser figure div {
+    left: 0px;
+    border-left: 20px solid #B0A48B;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+}
+
+a.readmore {
+    text-decoration: underline!important;
+}
+
+
+/*categories*/
+
+#modProdCategoriesList {
+    list-style: none;
+    margin: 0px auto 0px auto!important;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+    max-width: 1500px;
+}
+
+#modProdCategoriesList li {
+    display: inline-block;
+    width: 900px;
+    height: 400px;
+    overflow: hidden;
+    margin: 0px 0px 0px 0px;
+    position: relative;
+    background-color: #FFFFFF;
+    text-align: left;
+}
+
+#modProdCategoriesList li h4 {
+    padding: 5px 0px 5px 0px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 0px;
+    text-align: left;
+    color: #000000;
+}
+
+#modProdCategoriesList li>a {
+    position: relative;
+    display: block;
+}
+
+#modProdCategoriesList li>a span {
+    position: absolute;
+    display: block;
+    top: 50px;
+    left: 460px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid #B0A48B;
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+}
+
+#modProdCategoriesList li>div {
+    position: absolute;
+    top: 0px;
+    left: 500px;
+    width: 360px;
+    height: 360px;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    color: #666666;
+    font-size: 14px;
+    background-color: #B0A48B;
+    display: table;
+}
+
+#modProdCategoriesList li>div div.modArticleText {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0px 10px 0px 10px;
+}
+
+#modProdCategoriesList li div h4 {
+    font-size: 20px;
+    margin: 0px 0px 5px 0px;
+}
+
+#modProdCategoriesList li div * {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#modProdCategoriesList li div a {
+    position: absolute;
+    left: 100px;
+    bottom: 20px;
+    display: block;
+    background-color: #FFFFFF;
+    width: 200px;
+    margin: 0px auto auto auto;
+    padding: 5px 10px 3px 10px;
+    color: #B0A48B;
+}
+
+#modProdCategoriesList li img {
+    width: 600px;
+    height: 400px;
+}
+
+#modProdCategoriesList li.row2 {
+    text-align: right;
+}
+
+#modProdCategoriesList li.row2>a span {
+    left: 400px;
+    border-left: 20px solid #FFFFFF;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+}
+
+#modProdCategoriesList li.row2>div {
+    left: 0px;
+    right: 500px;
+    background-color: #FFFFFF;
+}
+
+#modProdCategoriesList li.row2 div * {
+    color: #666666;
+}
+
+#modProdCategoriesList li.row2 div a {
+    color: #FFFFFF;
+    background-color: #B0A48B;
+}
+
+.modVideo {
+    width: 100%;
+    min-height: 500px;
+}

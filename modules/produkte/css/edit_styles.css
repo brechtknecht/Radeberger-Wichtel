@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+#filterList	{list-style-type: none;}
+
+#filterList ul	{list-style-type: none;padding: 0px 0px 0px 0px; width: auto;}
+#filterList ul li	{display: block; border: 1px solid #CCCCCC; padding: 2px; margin: 4px; background-color: #eaeaea}
+#filterList ul li label input	{vertical-align: middle; margin-right: 3px;}
+
+#filterList ul li ul {margin-left: 14px; }
+#filterList ul li ul li	{background-color: #FFFFFF; margin: 2px;}
+#filterList ul li ul li.limitSelection {background-color: #eaeaea!important; border-color: #eaeaea!important; color: #666666}

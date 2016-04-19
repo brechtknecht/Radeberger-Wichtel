@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+/*categories*/
+#modProdCategoriesList	{list-style: none; margin: 0px auto 0px auto!important; padding: 0px 0px 0px 0px; text-align: center; max-width: 1500px;}
+#modProdCategoriesList li	{display: inline-block; width: 900px; height: 400px; overflow: hidden; margin: 0px 0px 0px 0px; position: relative; background-color: #FFFFFF; text-align: left;}
+#modProdCategoriesList li h4	{padding: 5px 0px 5px 0px; text-transform: uppercase; font-weight: normal; margin: 0px; text-align: left; color: #000000;}
+#modProdCategoriesList li>a {position: relative; display: block;}
+#modProdCategoriesList li>a span	{position: absolute; display: block; top: 50px; left: 460px; border-left: 20px solid transparent; border-right: 20px solid #B0A48B; border-bottom: 20px solid transparent; border-top: 20px solid transparent; }
+
+#modProdCategoriesList li>div	{position: absolute; top: 0px;left: 500px;  width: 360px; height: 360px; padding: 20px 20px 20px 20px; text-align: center; color: #666666; font-size: 14px; background-color: #B0A48B; display: table; }
+#modProdCategoriesList li>div div.modArticleText	{display: table-cell; vertical-align: middle;}
+#modProdCategoriesList li div h4	{font-size: 20px; margin: 0px 0px 5px 0px;}
+#modProdCategoriesList li div *	{color: #FFFFFF; text-align: center; }
+#modProdCategoriesList li div a	{position: absolute; left: 100px; bottom: 20px; display: block; background-color: #FFFFFF; width: 200px; margin: 0px auto auto auto; padding: 5px 10px 3px 10px; color: #B0A48B; }
+
+#modProdCategoriesList li img	{width: 600px; height: 400px;}	
+
+#modProdCategoriesList li.row2	{text-align: right;}
+#modProdCategoriesList li.row2>a span	{left: 400px;  border-left: 20px solid #FFFFFF; border-right: 20px solid transparent; border-bottom: 20px solid transparent; border-top: 20px solid transparent; }
+#modProdCategoriesList li.row2>div	{left: 0px; right: 500px; background-color: #FFFFFF;}
+#modProdCategoriesList li.row2 div *	{color: #666666;}
+#modProdCategoriesList li.row2 div a	{color: #FFFFFF; background-color: #B0A48B;}
+
+/*products*/
+.modCatDesc	{max-width: 900px; margin: 0px auto 40px auto!important; text-align: center; text-transform: none; }
+#modProdList	{list-style: none; margin: 0px auto 0px auto!important; padding: 0px 0px 0px 0px; text-align: center; }
+#modProdList li	{display: inline-block; width: 650px; height: 400px; overflow: hidden; margin: 0px 0px 0px 0px; position: relative; background-color: #FFFFFF; text-align: left;}
+#modProdList li:last-child	{}
+#modProdList li h4	{padding: 5px 0px 5px 0px; text-transform: uppercase; font-weight: normal; margin: 0px; text-align: left; color: #000000;}
+#modProdList li h4.modPrice	{position: absolute; left: 0px; bottom: 60px; width: 100%; }
+#modProdList li>a {position: relative; display: block;}
+#modProdList li>a span	{position: absolute; display: block; width: 20px; height: 100px; top: 50px; left: 380px; background-image: url(../../../shared/images/bgProdDesc.png); background-repeat: no-repeat; background-position: 0px 0px;}
+
+.videoIcon	{position: absolute; top: 20px; left: 20px;}
+.row2 .videoIcon	{left: auto!important; right: 20px!important;}
+
+#modProdList li>div	{position: absolute; top: 0px; left: 400px; width: 210px; height: 360px; padding: 20px 20px 20px 20px; background-color: #B0A48B; display: table;}
+#modProdList li div.modArticleText	{text-align: center; color: #666666; font-size: 14px; display: table-cell; vertical-align: middle;}
+#modProdList li div h4	{font-size: 20px; margin: 0px 0px 15px 0px;}
+#modProdList li div *	{color: #FFFFFF; text-align: center; }
+#modProdList li div a	{position: absolute; left: 45px; bottom: 30px; display: block; background-color: #FFFFFF; width: 160px; margin: 0px auto auto auto; padding: 5px 0px 3px 0px; color: #B0A48B; text-transform: uppercase; }
+
+#modProdList li img	{max-width: 100%; max-height: 100%;}	
+
+#modProdList li video {display: none;}
+
+#modProdList li.row2	{text-align: right;}
+#modProdList li.row2>a span	{left: 250px; background-image: url(../../../shared/images/bgProdDescRow2.png); background-repeat: no-repeat; background-position: -75px 0px; }
+#modProdList li.row2>div	{left: 0px; right: 400px; background-color: #DDDDDD;}
+#modProdList li.row2 div *	{color: #666666;}
+#modProdList li.row2 div a	{color: #FFFFFF; background-color: #B0A48B;}
+
+/*shopping cart*/
+#modShoppingCart	{}
+#modShoppingCart form	{margin: 30px auto 20px auto;}
+#modShoppingCart form table	{width: 100%; margin: 0px 0px 20px 0px;}
+#modShoppingCart form th	{padding: 5px 10px 5px 5px; text-transform: uppercase; font-weight: normal; background-color: #B0A48B; margin: 0px; text-align: left; color: #FFFFFF;}
+#modShoppingCart form td	{padding: 5px 10px 5px 5px; border-bottom: 1px solid #DDDDDD; vertical-align: middle;}
+#modShoppingCart form td img	{width: 30px;}
+#modShoppingCart form input	{width: 20px; text-align: right; padding: 2px;}
+#modShoppingCart h4, #modShoppingCart p	{text-align: center;}
+#modShoppingCart .modSummary td	{font-weight: bold; border-bottom: 3px double #B0A48B;}
+#modShoppingCart .modDelItem	{font-size: 11px; display: block;}	
+
+.modDataTable	{width: 100%;}
+.modDataTable th	{padding: 5px 10px 5px 5px; text-transform: uppercase; font-weight: normal; background-color: #B0A48B; margin: 0px; text-align: left; color: #FFFFFF;}
+.modDataTable td	{padding: 5px 10px 5px 5px; border-bottom: 1px solid #B0A48B;}
+.modActionRow	{border: none!important; text-align: center; padding-top: 20px!important;}
+
+/*modContent	{width: 430px; background-color: #FFFFFF; margin-top: -15px; margin-left: 270px; }
+#modContent h3	{border-bottom: 1px solid #CCCCCC; margin-bottom: 10px;}
+#modContent table	{width: 430px;}
+#modContent table th, #modContent table td	{font-size: 12px; text-align: left; padding-right: 10px; border-bottom: 1px solid #CCCCCC; color: #000000; vertical-align: top; padding-top: 2px; padding-bottom: 2px;}
+#modContent table td input.modEntryCount	{width: 35px; text-align: right;}
+
+#modCategoryPreview	{margin-left: 272px; display: block; border: none; }
+#modCategoryPreview img	{width: 425px; border: none; }
+
+#modProdList	{list-style-type: none; margin-left: 272px; overflow: auto}
+* html #modProdList	{margin-left: 262px;}
+#modProdList li	{display: inline}
+#modProdList li a	{margin-left: 0px; display: block; width: 95px; height: 95px; border: 1px solid #CCCCCC; float: left; margin-left: 10px; margin-bottom: 10px; }
+#modProdList li a img	{border: none; width: 95px; height: 95px;}
+
+#modPageNavigation	{position: absolute; top: -20px; right: 0px; list-style-type: none;}
+#modPageNavigation li	{display: inline}
+#modPageNavigation li a	{color: #999999; text-decoration: none; margin-left: 10px;}
+#modPageNavigation li a:hover	{color: #FF0000}
+
+#modProdDetails	{position: absolute; width: 224px; left: 0px; bottom: 80px; z-index: 110}
+#modProdDetails p	{text-align: right; margin-top: 12px; color: #999999; margin-bottom: 0px!important;}
+#modProdDetails p.modProdPrice	{color: #000000!important; font-weight: bold}
+
+#modProdImg	{position: absolute; left: 290px; top: 0px; }
+
+.modAddItem a	{font-size: 11px;}
+.modAddItem a:hover	{font-weight: normal}
+
+.modDelItem	{font-weight: bold; padding-left: 5px;}
+
+#modPreviewShoppingCart	{position: absolute; top: 418px; left: 0px; background-color: #EBEBEB; color: #000000; width: 215px; padding: 5px; font-size: 11px;}
+#modPreviewShoppingCart a	{float: right; font-size: 11px;}
+
+#modContactForm	{width: 430px; background-color: #FFFFFF; margin-left: 270px; margin-top: -15px;}
+#modContactForm p	{overflow: auto; padding: 3px;	margin-bottom: 3px;}
+#modContactForm p label	{display: block; float: left; width: 120px; margin-right: 10px; padding-top: 3px;}
+#modContactForm p input,#modContactForm p textarea	{width: 295px; margin-right: 5px;}
+#modContactForm p select	{margin-right: 20px;}
+
+
+#modContactForm	{width: 430px; background-color: #FFFFFF; margin-left: 270px; margin-top: -15px;}
+#modContactForm h3	{border-bottom: 1px solid #CCCCCC; margin-bottom: 10px;}
+#modContactForm form	{width: 440px; float: left}
+#modContactForm td	{padding-bottom: 5px; vertical-align: top}
+#modContactForm input, #modForm textarea {width: 295px;}
+.errorInput	{border: 1px solid #FF0000}
+
+#modShowCart	{margin-left: 270px; margin-top: -15px;}
+#modShowCart h3	{border-bottom: 1px solid #CCCCCC; margin-bottom: 10px;}
+#modShowCart table	{width: 430px;}
+#modShowCart table th, #modShowCart table td	{font-size: 12px; text-align: left; padding-right: 10px; border-bottom: 1px solid #CCCCCC; color: #000000; vertical-align: top; padding-top: 2px; padding-bottom: 2px;}
+#modShowCart table td input.modEntryCount	{width: 35px; text-align: right;}
+
+.modSummary td	{font-weight: bold; border-bottom: 1px solid #000000!important; }
+
+#modSummary	{width: 430px; background-color: #FFFFFF; margin-left: 270px; margin-top: -15px;}
+#modSummary h3	{border-bottom: 1px solid #CCCCCC; margin-bottom: 10px;}
+#modSummary #modShowCart	{margin-left: 0px; margin-top: 0px;}
+#modSummary table tr td	{padding-right: 20px;}
+*/

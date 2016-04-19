@@ -1,0 +1,127 @@
+*	{margin: 0px; padding: 0px; font-weight: normal; font-family: Verdana, Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica,  sans-serif;  font-size: 12px; vertical-align: top;}
+body	{background-color: #f9f8f7; min-width: 550px;}
+main	{min-height: 400px; margin: auto; display: block; width: 100%;}
+
+header	{margin: 0px 0px 30px 0px; text-align: center; background-color: #f9f8f7; position: relative; border-bottom: 1px solid #DDDDDD; display:block;}
+header nav	{margin: 0px 0px 0px 0px; padding: 20px 0px 0px 0px; position: fixed; width: 100%; border-top: 10px solid #B0A48B; background-color: #FFFFFF; z-index: 1100}
+h1	{margin: 0px 0px 10px 0px; padding: 220px 0px 0px 0px; background-image: url(../images/logo.png); background-repeat: no-repeat; background-position: center 100px; }
+h1 a	{font-size: 24px; color: #3D3D3C; text-transform: uppercase; letter-spacing: 4px; text-decoration: none;}
+h2	{color: #979796; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; padding: 0px 0px 40px 0px; }
+h3	{font-size: 24px; margin: 0px 0px 15px 0px; padding: 0px 0px 10px 0px; border-bottom: 1px solid #CCCCCC; display: none;}
+h4	{font-size: 20px; text-transform: uppercase; color: #999999;}
+h5	{font-size: 16px; text-transform: uppercase;}
+
+h1, h2, h3, h4, h5, h1 *, h2 *, h3 *, h4 *, h5 *	{font-family: "Times New Roman", Cambria, "Hoefler Text", "Liberation Serif", Times, serif}
+
+hr	{height: 1px; color: #CCCCCC; background-color: #CCCCCC; border: none; margin: 0px auto 30px auto; width: 100px;}
+
+button	{background-color: #666666; color: #FFFFFF; letter-spacing: 2px; padding: 5px 10px 5px 10px; min-width: 120px; text-align: center; border: none; text-transform: uppercase; margin: 0px 10px 0px 10px; display:block; margin: 0px auto 10px auto;}
+
+video	{background-color: #000000; background-size: cover;}
+
+ul#switchLanguage {position: fixed; left: 0px; top: 59px; padding: 4px 0px 4px 0px; background-color: #EFEFEF; z-index: 1000; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; list-style: none;}
+ul#switchLanguage li {float: left; margin: 0px 0px 0px 0px; border-right: 1px solid #CCCCCC;}
+ul#switchLanguage li:last-child {border: none;}
+ul#switchLanguage li a {padding: 0px 10px 0px 10px; color: #999999; text-decoration: none; text-transform: uppercase;}
+ ul#switchLanguage li.active a {color: #000000;}
+
+strong	{font-weight: bold;}
+
+#mainNaviList	{min-width: 550px;}
+#mainNaviList, #mainNaviList ul	{list-style: none; }
+#mainNaviList	{height: 28px; border-bottom: 1px solid #DDDDDD;}
+#mainNaviList>li {position: relative; display: inline-block; padding-bottom: 20px;}
+#mainNaviList li a	{padding: 0px 20px 0px 20px; text-decoration: none; color: #999999; text-transform: uppercase; font-size: 14px; letter-spacing: 2px; display: inline-block;}
+#mainNaviList li:last-child a 	{border: none;}
+#mainNaviList li:hover a, #mainNaviList li.active a	{color: #000000;}
+#mainNaviList li:hover ul {height: 200px;}
+
+#mainNaviList li ul	{position: absolute; left: -40px; top: 28px; opacity: 0.9; height: 0px; overflow: hidden; transition: height 1s;}
+#mainNaviList li ul	li	{padding: 5px 0px 2px 0px; border-bottom: 1px solid #FFFFFF; background-color: #B0A48B; display: block; width: auto;}
+#mainNaviList li ul	li a	{font-size: 12px!important; float: none;  border: none!important; color: #FFFFFF!important; white-space: nowrap; display: block; width: auto!important;}
+#mainNaviList li ul	li.active 	{}
+#mainNaviList li ul	li.active a, #mainNaviList li ul li:hover a	{color: #000000!important;}
+
+
+#slider {overflow: auto;}	
+#slideImagesList li	{overflow: hidden;}
+#slideImagesList li img	{width: 100%;}
+
+content	{display: block; margin: auto;}
+body.w900 content	{max-width: 980px;}
+
+
+#contentarea1	{margin: 0px 0px 0px 0px;}
+#contentarea1 h4, #contentarea1 h5, #contentarea1 ul, #contentarea1 p	{margin: 0px 0px 20px 0px; text-align: center; line-height: 24px;}
+#contentarea1 h4, #contentarea1 h5, #contentarea1 ul, #contentarea1 p	{}
+#contentarea1 ul, #contentarea1 ol	{margin-left: 30px; }
+#contentarea1 a, #cart a	{color: #990000; text-decoration: none;}
+#contentarea1_parent	{min-height: 200px;}
+
+/*footer*/
+footer	{border-top: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; padding: 30px 0px 30px 0px; margin: 30px 0px 20px 0px;}
+footer div	{width: 900px; margin: auto; overflow: auto;}
+footer div article	{width: 33%; float: left; text-align: center; }
+footer div article *	{color: #999999;}
+footer div article h4	{margin-bottom: 20px;}
+footer div article p	{line-height: 24px;}
+
+/*forms*/
+.contentForm	{text-align: center; margin: 50px 0px 20px 0px;}
+
+.contentForm h4	{margin: 20px 0px 20px 0px!important; }
+.contentForm *, .contentForm p	{}
+.contentForm fieldset	{border: 1px solid #B0A48B; padding: 5px 10px 5px 10px; margin-bottom: 20px; text-align: left!important;}
+.contentForm fieldset *	{text-align: left!important;}
+.contentForm legend {padding: 5px 5px 5px 5px; margin: 0px 0px 10px 0px; background-color: #B0A48B; color: #FFFFFF; text-transform: uppercase;}
+
+.contentForm label	{font-size: 0.9em; display: block; line-height: 20px;} 
+label.checkboxLabel	{padding: 0px 0px 20px 20px; position: relative;}
+label.checkboxLabel input	{position: absolute; top: 2px; left: 0px;}
+.contentForm div	{float:left; margin: 0px 10px 0px 0px;}
+.contentForm input, textarea	{width: 95%; padding: 3px; border: 1px solid #CCCCCC; margin: 0px 0px 5px 0px; color: #666666; vertical-align: text-top; }
+.contentForm select	{padding: 3px 3px 2px 3px; border: 1px solid #CCCCCC; margin-bottom: 5px; color: #666666; vertical-align: text-top;}
+#bankeinzug, #kreditkarte, #versandRegion	{float: none;}
+		
+.errorInput	{border: 1px solid #FF0000!important;}
+.errorMsg	{color: #FF0000; font-size: 0.8em;}
+
+#fb	{position: absolute; right: 0px; top: 515px;}
+
+/*classes*/
+.w700Text {max-width: 700px; margin-left: auto!important; margin-right: auto!important;}
+
+/*cart preview*/
+#cart	{position: fixed; right: 0px; top: 59px; padding: 4px 20px 4px 20px; background-color: #EFEFEF; z-index: 1000; border-left: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; width: 200px;}
+#cart, #cart * {font-size: 11px; color: #666666;}
+#cart a	{text-transform: uppercase; color: #333333;}
+#cart a:hover	{color: #990000;}
+
+/*search*/
+#shopSearch	{text-align: center; margin: 0px 0px 20px 0px;}
+#shopSearch input	{border: 1px solid #CCCCCC; color: #999999; text-align: center;}
+
+main>p	{text-align: center; text-transform: uppercase; margin: 20px 0px 20px 0px; color: #666666;}
+
+/*mobile styles*/
+/*
+.mobile *	{}
+.mobile h1 img	{width: 90%;}
+.mobile main	{width: auto!important; margin: 60px 0px 0px 0px}
+.mobile h2	{float: none; margin: 0px 0px 20px 20px; }
+.mobile h3	{}
+.mobile #slideImagesList	{display: none;}
+.mobile	#contentarea1	{margin: 0px 10px 0px 20px!important; clear: both;}
+.mobile #bContainer	{width: auto!important; float: none; clear: both;}
+.mobile .startNaviList li, .mobile .imgList li	{}
+.mobile .startNaviList li a	{font-size: 20px;}
+.mobile #fb	{position: absolute; left: 20px; top: 0px;}
+.mobile #fb img	{width: 80px;}
+.mobile content>h3	{display: none;}
+.mobile content *	{font-size: medium!important; -webkit-text-size-adjust: 100%; text-size-adjust: 100%;}
+.mobile #karte {display: none;}
+.mobile .contactList li a	{width: 35%;}
+.mobile .dispoList li	{width: 90%; margin: 0px 0px 5% 0px;}
+
+#mainNaviSelect	{width: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000;}
+*/

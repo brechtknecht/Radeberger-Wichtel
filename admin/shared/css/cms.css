@@ -1,0 +1,8 @@
+@charset "utf-8";
+*	{margin: 0px; padding: 0px; font-weight: normal; font-family: Verdana, Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica,  sans-serif;  font-size: 12px; vertical-align: top;}
+h4	{font-size: 20px; text-transform: uppercase; color: #999999;}
+h5	{font-size: 16px; text-transform: uppercase;}
+
+h4, h5, ul, p	{margin: 0px 0px 20px 0px; text-align: center; line-height: 24px;}
+
+

@@ -1,0 +1,21 @@
+#modArticles article	{display: block; }
+#modArticles article div.articleTeaser	{background-color: #FFFFFF; position: relative; width: 980px; overflow: auto;}
+#modArticles article div.articleTeaser *	{color: #666666;}
+#modArticles article div.articleTeaser figure	{width: 400px; float:left; position: relative;}
+#modArticles article div.articleTeaser figure img	{width: 100%; display: block; }
+#modArticles article div.articleTeaser figure>div	{position: absolute; top: 50px; right: 0px; background-image: none; border-left: 20px solid transparent; border-right: 20px solid #FFFFFF; border-bottom: 20px solid transparent; border-top: 20px solid transparent; }
+
+#modArticles article div.articleTeaser>div	{position: absolute; top: 0px; left: 400px; bottom: 0px; width: 580px;  box-sizing: border-box; padding: 0px 30px 0px 30px; text-align: center;}
+
+#modArticles div.modArticleText {padding: 0px 10px 0px 10px;}
+
+
+
+#modArticles article.row2 div.articleTeaser	{background-color: #B0A48B; }
+#modArticles article.row2 div.articleTeaser figure	{float:right;}
+#modArticles article.row2 div.articleTeaser>div	{left: 0px; }
+#modArticles article.row2 div.articleTeaser>div *	{color: #FFFFFF;}
+#modArticles article.row2 div.articleTeaser figure div	{left: 0px; border-left: 20px solid #B0A48B; border-right: 20px solid transparent; border-bottom: 20px solid transparent; border-top: 20px solid transparent; }
+
+
+.modVideo	{width: 100%; min-height: 500px;}

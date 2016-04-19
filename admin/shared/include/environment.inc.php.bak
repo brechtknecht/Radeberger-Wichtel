@@ -1,0 +1,71 @@
+<?php
+//session
+session_start();
+// /session
+header("Content-Type: text/html; charset=utf-8");
+error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
+
+//global vars
+if(!isset($_SESSION['global_vars']['path_to_root'])){
+	$path="http://".$_SERVER['HTTP_HOST'];
+	$path.=$_SERVER['SCRIPT_NAME'];
+	$path=substr($path,0,strpos($path,"admin/"));
+$_SESSION['global_vars']['path_to_root']=$path;
+}
+
+if(!isset($_SESSION['global_vars']['max_history'])){
+	$_SESSION['global_vars']['max_history']=5;
+}
+// /global vars
+
+//include
+include("functions.inc.php");
+
+//check permission
+if(!isset($_SESSION['cms_user']) && !strstr($_SERVER['PHP_SELF'],"admin/login.php") && !strstr($_SERVER['PHP_SELF'],"admin/index.php")){
+	//die("Ihre Sitzung ist abgelaufen! Bitte loggen Sie sich erneut ein.");
+}
+
+function isLoggedIn(){
+	if(!isset($_SESSION['cms_user'])){
+		echo "<script type=\"text/javascript\">parent.location.href='http://www.datom.de/admin/'</script>";
+	}
+}
+
+//ini settings
+ini_set('arg_separator.output', '&amp;');
+// /ini settings
+
+
+
+//connect db
+$username="root";
+$password="";
+$host="localhost";
+$database="awo_sachsen";
+$link=mysql_connect($host, $username, $password);
+mysql_query("SET CHARACTER SET 'utf8'");
+//mysql_set_charset("utf8");
+mysql_select_db($database);
+echo mysql_error();
+// /connect db
+
+//define constant -> checking for internal call
+define("internalCall",true);
+
+//set languages array
+$result_lang=mysql_query("SELECT setting_value FROM _cms_settings_ WHERE setting_key='languages' LIMIT 1");
+$error = mysql_error();
+$_SESSION['lang_array']=array();
+if(empty($error)){
+	if(mysql_num_rows($result_lang)>0){
+		$row_lang=mysql_fetch_array($result_lang);
+		$tmp=explode("|",$row_lang['setting_value']);
+		foreach($tmp as $val){
+			if(!empty($val) && !strstr($val,"!")){
+				array_push($_SESSION['lang_array'],$val);
+			}
+		}
+	}
+}
+?>

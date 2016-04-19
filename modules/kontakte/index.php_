@@ -1,0 +1,99 @@
+<?php
+include_once("../../admin/shared/include/environment.inc.php");
+
+$module_name = getParentDir($_SERVER['SCRIPT_FILENAME']);
+if(strstr($module_name,"\\")){
+	$module_name = substr($module_name,strrpos($module_name,"\\")+1);
+}
+
+if(checkPermission("user",$_SESSION['cms_user']['user_id'],"module",$module_name)==false){
+	die("Sie haben keine Berechtigung auf dieses Element zuzugreifen!");
+}
+//get entries
+$bgclass="col1";
+function getEntries($entry_parent_id,$indent=25){
+	global $bgclass,$module_name;
+	$query = "SELECT";
+	$query.= " entry_id AS entry_id";
+	$query.= ", main_category AS main_category";
+	$query.= ", CONCAT(name,', ',vorname) AS name";
+	$query.= ", abteilung AS abteilung";
+	$query.= ", last_change AS last_change";
+	$query.= ", entry_last_usr AS entry_last_usr";
+	$query.= " FROM _cms_modules_contacts_ ORDER BY name ASC, vorname ASC";
+	$result=mysqli_query($_SESSION['conn'], $query);
+	if(mysqli_num_rows($result)>0){
+		while($row=mysqli_fetch_assoc($result)){
+			if($bgclass=="col2"){
+				$bgclass="col1";
+			}
+			else{
+				$bgclass="col2";
+			}
+			echo "<tr class=\"".$bgclass."\" onmouseover=\"this.style.backgroundColor='#FFFFFF'\" onmouseout=\"this.style.backgroundColor=''\">";
+			echo "<td nowrap=\"nowrap\">";
+			echo "<a href=\"edit.php?entry_id=".$row['entry_id']."\"><img src=\"../../admin/shared/images/editable.gif\" alt=\"\" title=\"Eintrag bearbeiten\" /></a>";  
+			if(checkPermission("user",$_SESSION['cms_user']['user_id'],"module",$module_name,"function","del")){
+				echo "<img src=\"../../admin/shared/images/delete.gif\" alt=\"\" title=\"Eintrag löschen\" onclick=\"MODULE_deleteEntry(".$row['entry_id'].",this.parentNode.parentNode);\" />";
+			}
+			echo "</td>";		
+			echo "<td>";
+			echo stripslashes($row['name']);
+			echo "</td>";
+			echo "<td>".($row['main_category'])."</td>";
+			echo "<td>".($row['abteilung'])."</td>";
+			
+			echo "<td>";
+			echo $row['last_change'];
+			echo "</td>";
+			echo "</tr>";			
+		}
+	}
+}
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>zeemes : web content management system : modules : <?php echo $module_name;?></title>
+<script type="text/javascript" src="../../admin/shared/javascript/functions.js">
+</script>
+<script type="text/javascript" src="javascript/module_edit.js">
+</script>
+<link rel="stylesheet" href="../../admin/shared/css/styles.css" />
+</head>
+
+<body id="content" onload="SHARED_scrollTBody('listTable',SHARED_getAvailHeight(document.body,'listTable'));">
+<h2><?php echo strtoupper($module_name);?></h2>
+<?php
+	if(checkPermission("user",$_SESSION['cms_user']['user_id'],"module",$module_name,"function","new")){
+	?>
+<div id="saveTools">
+	<button type="button" onclick="location.href='edit.php?entry_id=new'">Neuer Eintrag</button>
+</div>
+<?php
+    	}
+	?>
+<table cellpadding="0" cellspacing="0" id="listTable" class="table">
+	<thead>
+    <tr>
+    	<th style="width: 60px">Aktionen</th>
+        <th style="width: 300px">Name</th>
+        <th style="width: 150px">Kategorie</th>
+        <th style="width: 200px">Abteilung</th>
+        <th style="width: auto">letzte Änderung</th>
+        
+        
+    </tr>
+    </thead>
+    <tbody>
+		
+	<?php
+	getEntries(0);
+	?>
+    </tbody>
+    <tfoot>
+    </tfoot>
+</table>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<xml><mailto><![CDATA[info@radeberger-wichtel.de]]></mailto><mailfrom><![CDATA[info@radeberger-wichtel.de]]></mailfrom><shipping><![CDATA[[{"deutschland":0,"eu":10,"outside_eu":19}]]]></shipping><shipping_time><![CDATA[5]]></shipping_time><subject><![CDATA[Ihre Bestellung bei radeberger-wichtel.de]]></subject><mailtext><![CDATA[Vielen Dank für Ihre Bestellung! 
+Hier eine Zusammenfassung Ihrer Bestelldaten:
+]]></mailtext><mailtext_vorkasse><![CDATA[Sie haben "Vorkasse" als Bezahlvariante gewählt.
+Bitte überweisen Sie den Kaufbetrag auf folgendes Konto:
+
+BANKVERBINDUNG
+Kontoinhaber: Karl-Heinz Pinkert
+Bank: Ostsächsische Sparkasse Dresden
+IBAN DE02850503003120138346
+BIC   OSDDDE81XXX
+
+Verwendungszweck: RBW{vwdz}]]></mailtext_vorkasse><mailtext_paypal><![CDATA[Sie haben "Paypal" als Bezahlvariante gewählt.]]></mailtext_paypal><mailtext_lastschrift><![CDATA[Sie haben "Lastschrift" als Bezahlvariante gewählt.
+Der Kaufpreis wird von Ihrem angegebenen Konto eingezogen.]]></mailtext_lastschrift><mailtext_kreditkarte><![CDATA[Sie haben "Kreditkarte" als Bezahlvariante gewählt.]]></mailtext_kreditkarte><mailtext_ende><![CDATA[--------------------------------------------------
+RADEBERGER WICHTEL
+
+Inhaber: Karl-Heinz Pinkert
+
+Friedensstraße 20
+01454 Radeberg OT Liegau-Augustusbad
+
+phone +49 3528 44 08 98
+fax +49 3528 41 11 85]]></mailtext_ende></xml>

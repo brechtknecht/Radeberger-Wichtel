@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+#modContent	{width: 430px; background-color: #FFFFFF; margin-top: -15px; }
+#modContent h3	{border-bottom: 1px solid #CCCCCC; margin-bottom: 10px;}
+
+#modContent form	{width: 440px;}
+#modContent td	{padding-bottom: 5px; vertical-align: top}
+#modContent input, #modContent textarea {width: 295px; margin-bottom: 5px;}
+#modContent fieldset	{clear: both; border: none}
+
+.errorInput	{border: 1px solid #FF0000}
