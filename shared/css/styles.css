@@ -125,3 +125,22 @@ main>p	{text-align: center; text-transform: uppercase; margin: 20px 0px 20px 0px
 
 #mainNaviSelect	{width: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000;}
 */
+
+
+/* MEDIAQUERIES */
+/*
+@media only screen and (max-width: 920px){
+    #modContent{
+        width: 100%;
+    }
+    
+    #modArticles div.modArticleText{
+        
+    }
+    
+    #modArticles article.row1 div.articleTeaser,
+    #modArticles article.row2 div.articleTeaser{
+        width: 100%;
+    }
+}
+*/
