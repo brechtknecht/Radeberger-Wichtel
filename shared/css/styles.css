@@ -17,7 +17,7 @@ hr	{height: 1px; color: #CCCCCC; background-color: #CCCCCC; border: none; margin
 
 button	{background-color: #666666; color: #FFFFFF; letter-spacing: 2px; padding: 5px 10px 5px 10px; min-width: 120px; text-align: center; border: none; text-transform: uppercase; margin: 0px 10px 0px 10px; display:block; margin: 0px auto 10px auto;}
 
-video	{background-color: #000000; background-size: cover;}
+video	{background-color: #000000; background-size: cover; height: 539px;}
 
 ul#switchLanguage {position: fixed; left: 0px; top: 59px; padding: 4px 0px 4px 0px; background-color: #EFEFEF; z-index: 1000; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; list-style: none;}
 ul#switchLanguage li {float: left; margin: 0px 0px 0px 0px; border-right: 1px solid #CCCCCC;}
