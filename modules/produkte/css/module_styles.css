@@ -128,3 +128,41 @@
 #modSummary #modShowCart	{margin-left: 0px; margin-top: 0px;}
 #modSummary table tr td	{padding-right: 20px;}
 */
+
+@media only screen and (min-width: 720px) and (max-width: 920px){
+    #modProdCategoriesList li>a span{
+        left: auto;
+        right: 400px;
+    }
+    #modProdCategoriesList li>div{
+        left: auto;
+        right: 0;
+    }
+    #modProdCategoriesList li img{
+        margin-left: -20px;
+    }
+    #modProdCategoriesList li{
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 720px){
+    #modProdCategoriesList > li > a > span{
+        display: none;
+    }
+    
+    #modProdCategoriesList > li > div {
+        top: 400px;
+        left: 0;
+        width: 600px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #modProdCategoriesList li{
+        height: 800px;
+        width: 600px;
+    }
+    #modProdCategoriesList li div a{
+        left: calc(50% - 110px);
+    }
+}
