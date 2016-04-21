@@ -129,7 +129,7 @@
 #modSummary table tr td	{padding-right: 20px;}
 */
 
-@media only screen and (min-width: 720px) and (max-width: 920px){
+@media screen and (min-width: 820px) and (max-width: 920px){
     #modProdCategoriesList li>a span{
         left: auto;
         right: 400px;
@@ -146,7 +146,7 @@
     }
 }
 
-@media only screen and (max-width: 720px){
+@media screen and (min-width: 600px)and (max-width: 820px){
     #modProdCategoriesList > li > a > span{
         display: none;
     }
@@ -165,4 +165,8 @@
     #modProdCategoriesList li div a{
         left: calc(50% - 110px);
     }
+}
+
+@media screen and (max-width:600px){
+    
 }
